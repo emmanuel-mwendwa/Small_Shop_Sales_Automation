@@ -297,7 +297,7 @@
                 android:layout_height="50dp"
                 android:layout_margin="3dp"
                 android:layout_weight="1"
-                android:text="GRAND TOTAL" />
+                android:text="DISCOUNT 15%" />
 
             <EditText
                 android:id="@+id/discount"
@@ -324,7 +324,7 @@
                 android:layout_height="50dp"
                 android:layout_margin="3dp"
                 android:layout_weight="1"
-                android:text="GRAND TOTAL" />
+                android:text="NET PAY" />
 
             <EditText
                 android:id="@+id/net_pay"

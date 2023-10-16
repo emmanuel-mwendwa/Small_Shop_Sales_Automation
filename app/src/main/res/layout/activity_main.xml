@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ITEM"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PRICE"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="VAT 16%"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ACTUAL PRICE"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp">
+
+            <Button
+                android:id="@+id/milk_button"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="MILK" />
+
+            <EditText
+                android:id="@+id/milk_price"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+
+            <EditText
+                android:id="@+id/milk_vat"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+
+            <EditText
+                android:id="@+id/milk_actual_price"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp">
+
+            <Button
+                android:id="@+id/sugar_button"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="SUGAR" />
+
+            <EditText
+                android:id="@+id/sugar_price"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+
+            <EditText
+                android:id="@+id/sugar_vat"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+
+            <EditText
+                android:id="@+id/sugar_actual_price"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp">
+
+            <Button
+                android:id="@+id/flour_button"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="FLOUR" />
+
+            <EditText
+                android:id="@+id/flour_price"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+
+            <EditText
+                android:id="@+id/flour_vat"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+
+            <EditText
+                android:id="@+id/flour_actual_price"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp">
+
+            <Button
+                android:id="@+id/bread_button"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="BREAD" />
+
+            <EditText
+                android:id="@+id/bread_price"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+
+            <EditText
+                android:id="@+id/bread_vat"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+
+            <EditText
+                android:id="@+id/bread_actual_price"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp">
+
+            <Button
+                android:id="@+id/grand_total_button"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="GRAND TOTAL" />
+
+            <EditText
+                android:id="@+id/grand_total"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp">
+
+            <Button
+                android:id="@+id/discount_button"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="GRAND TOTAL" />
+
+            <EditText
+                android:id="@+id/discount"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp">
+
+            <Button
+                android:id="@+id/net_pay_button"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="GRAND TOTAL" />
+
+            <EditText
+                android:id="@+id/net_pay"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:text=""
+                android:layout_margin="3dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

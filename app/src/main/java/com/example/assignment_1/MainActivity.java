@@ -12,6 +12,7 @@ import java.text.DecimalFormat;
 public class MainActivity extends AppCompatActivity {
     Button milk_btn;
     Button sugar_btn;
+    //testing commit
     Button flour_btn;
     Button bread_btn;
     int milkItemsPurchased = 0;

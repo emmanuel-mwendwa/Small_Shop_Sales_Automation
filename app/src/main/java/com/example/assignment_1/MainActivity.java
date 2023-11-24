@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.text.DecimalFormat;
 
@@ -39,35 +40,59 @@ public class MainActivity extends AppCompatActivity {
         milk_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                milkItemsPurchased++;
-                updateCart();
-                Milk();
+                if (milkItemsPurchased < 4) {
+                    milkItemsPurchased++;
+                    updateCart();
+                    Milk();
+                } else {
+                    // Optionally, you can provide feedback that the maximum count has been reached.
+                    // For example, you can display a Toast message.
+                    Toast.makeText(MainActivity.this, "Maximum limit reached for Milk", Toast.LENGTH_SHORT).show();
+                }
             }
         });
         sugar_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sugarItemsPurchased++;
-                updateCart();
-                Sugar();
+                if (sugarItemsPurchased < 4) {
+                    sugarItemsPurchased++;
+                    updateCart();
+                    Sugar();
+                } else {
+                    // Optionally, you can provide feedback that the maximum count has been reached.
+                    // For example, you can display a Toast message.
+                    Toast.makeText(MainActivity.this, "Maximum limit reached for Sugar", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
         flour_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                flourItemsPurchased++;
-                updateCart();
-                Flour();
+                if (flourItemsPurchased < 4) {
+                    flourItemsPurchased++;
+                    updateCart();
+                    Flour();
+                } else {
+                    // Optionally, you can provide feedback that the maximum count has been reached.
+                    // For example, you can display a Toast message.
+                    Toast.makeText(MainActivity.this, "Maximum limit reached for Flour", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
         bread_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                breadItemsPurchased++;
-                updateCart();
-                Bread();
+                if (breadItemsPurchased < 4) {
+                    breadItemsPurchased++;
+                    updateCart();
+                    Bread();
+                } else {
+                    // Optionally, you can provide feedback that the maximum count has been reached.
+                    // For example, you can display a Toast message.
+                    Toast.makeText(MainActivity.this, "Maximum limit reached for Bread", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

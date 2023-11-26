@@ -98,31 +98,30 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void updateCart() {
-        grandTotal = (milkItemsPurchased * milkPrice) + (sugarItemsPurchased * sugarPrice) + (flourItemsPurchased * flourPrice) + (breadItemsPurchased * breadPrice);
+public void updateCart() {
+    grandTotal = (milkItemsPurchased * milkPrice) + (sugarItemsPurchased * sugarPrice) + (flourItemsPurchased * flourPrice) + (breadItemsPurchased * breadPrice);
 
-        if (grandTotal > 1000) {
-            discount = 0.2 * grandTotal; // 20% discount
-        }
-        else if (grandTotal > 500) {
-            discount = 0.1 * grandTotal; // 10% discount
-        }
-        else {
-            discount = 0.0;
-        }
-
-        double netPay = grandTotal - discount;
-
-        EditText grandTotalField = findViewById(R.id.grand_total);
-        EditText discountField = findViewById(R.id.discount);
-        EditText netPayField = findViewById(R.id.net_pay);
-
-        DecimalFormat decimalFormat = new DecimalFormat("0.00");
-
-        grandTotalField.setText(decimalFormat.format(grandTotal));
-        discountField.setText(decimalFormat.format(discount));
-        netPayField.setText(decimalFormat.format(netPay));
+    // Check if the grand total exceeds 10,000 for the 15% discount
+    if (grandTotal > 10000) {
+        discount = 0.15 * grandTotal; // 15% discount
+    } else {
+        discount = 0.0;
+        // Display a toast message indicating no discount is awarded
+        Toast.makeText(MainActivity.this, "No discount awarded. Grand Total must exceed 10,000.", Toast.LENGTH_SHORT).show();
     }
+
+    double netPay = grandTotal - discount;
+
+    EditText grandTotalField = findViewById(R.id.grand_total);
+    EditText discountField = findViewById(R.id.discount);
+    EditText netPayField = findViewById(R.id.net_pay);
+
+    DecimalFormat decimalFormat = new DecimalFormat("0.00");
+
+    grandTotalField.setText(decimalFormat.format(grandTotal));
+    discountField.setText(decimalFormat.format(discount));
+    netPayField.setText(decimalFormat.format(netPay));
+}
 
     public void Milk () {
         double totalMilkPrice = milkItemsPurchased * milkPrice;
